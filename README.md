@@ -16,3 +16,6 @@ Easily customizable and beginner-friendly
 📁 Tech Stack:
 HTML
 CSS
+
+IDE:
+Visual Studio Code
