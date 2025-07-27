@@ -1,0 +1,325 @@
+/* css reset */
+
+*{ 
+  margin:0;
+  padding: 0;
+  
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variable */
+:root{
+   --nav-height:59px;
+
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+     background: white;
+    z-index: 1000;
+}
+#navbar::before{
+   content: "";
+   background-color: black;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.4;
+}
+/* Navigation bar: logo and image */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+   height: 59px;
+    margin: 3px  6px;
+}
+/* Navigation bar:list styling */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display:flex ;
+     font-family: "Bree Serif", serif;
+}
+#navbar::before{
+   content: "";
+   background-color: black;
+   position: absolute;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.4;
+}
+#navbar ul li{
+list-style: none;
+font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+display: block;
+padding: 3px 22px;
+border-radius: 20px;
+text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+   background: url("../bg2.webp")no-repeat center center/cover;
+   position: absolute;
+   height: 72%;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.79;
+}
+#home h1{
+    color: white;
+    text-align: center;
+     font-family: "Bree Serif", serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+     font-family: "Bree Serif", serif;
+}
+/* Apply layout only on client page */
+#homepage{
+   
+   content: "";
+    background: url('../img/cb.webp') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+
+}
+/* Apply layout only on contact page */
+#home_page{
+      background: url('../img/co.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+}
+#Client-page {
+   
+    padding: 50px 20px;
+    background: url('../img/CL.jpg')no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* services section*/
+#services{
+    margin: 15px;
+    display: flex;
+   
+   
+}
+/* Apply layout only on services page */
+#services .services-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#services .boxs {
+    width: 30%; /* 3 per row */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid green;
+    border-radius: 23px;
+    background-color: lightgray;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Limit image size and make sure it's inside the box */
+#services .boxs img {
+    width: 100%;
+    max-width: 200px;
+    height: 160px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+#home-banner {
+    background: url('../img/sb.avif') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: white; }
+
+
+#services .box{
+    border: 2px solid green;
+    padding: 20px;
+    margin: 2px 55px;
+    border-radius: 23px;
+    background: lightgray;
+    margin-bottom: 20px;
+   
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box p {
+       font-family: "Bree Serif", serif;
+}
+/* Client section*/
+#Client-section{
+ height: 335px;
+    
+}
+#Client-section::before{
+    content: "";
+    position: absolute;
+    background: url("../b.webp");
+    width: 100%;
+    height: 44%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+/* Contact section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("../img/contact.jpg")no-repeat center center/cover;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+.contact-box form{
+    width: 40%;
+}
+.contact-box label{
+    font-size: 1.3rem;
+    font-family: "Bree Serif", serif;
+}
+/* Apply layout only on contact page */
+#contact-info {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.contact-text {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #333;
+  min-width: 250px;
+}
+
+.contact-text p {
+  margin: 10px 0;
+}
+
+.contact-map {
+ width: 40%;
+  height: 300px; /* ← Adjust height here */
+  border: 0;
+   padding: 20px;        /* Adds space around the iframe */
+
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px
+    
+}
+/* Utility classes*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: "Bree Serif", serif;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 10px;
+    font-family: "Bree Serif", serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: green;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.star-rating{
+color: gold; /* You can also use #FFD700 */
+    font-size: 1.5rem; 
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
